@@ -1,0 +1,33 @@
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  .card {
+    flex: 0 0 auto;
+    margin-right: 3px;
+  }
+}
+
+.card {
+  border: 2px solid red;
+  width: 150px;
+  height: 75px;
+  background: grey;
+}
+
+ .scrolling-wrapper-flexbox {
+  height: 80px;
+  margin-bottom: 20px;
+  width:50%;
+  flex: 0 0 50%;
+  -webkit-overflow-scrolling: touch;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
