@@ -1,7 +1,10 @@
-<div class="scrolling-wrapper-flexbox" #widgetsContent (scroll)="scrollHandler($event)">
+<div class="scrolling-wrapper-flexbox" #widgetsContent (scroll)="scrollHandler($event)"  >
 
     <ng-content>
     </ng-content>
 
 </div>
+<button (click)="scrollLeft()">Prev</button>
+
 <button (click)="scrollRight()">Next</button>
+
